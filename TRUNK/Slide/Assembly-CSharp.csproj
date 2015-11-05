@@ -45,29 +45,31 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CharacterSound.cs" />
-     <Compile Include="Assets\Scripts\DrawCollider.cs" />
-     <Compile Include="Assets\Scripts\Move\MouseLook.cs" />
-     <Compile Include="Assets\Scripts\Move\Move.cs" />
-     <Compile Include="Assets\Scripts\MusicScript.cs" />
-     <Compile Include="Assets\Scripts\ObstaclesBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Reset.cs" />
-     <Compile Include="Assets\Scripts\TerrainModif.cs" />
-     <Compile Include="Assets\Scripts\TriggerAcceleration.cs" />
-     <Compile Include="Assets\TPS Camera\C++\CameraController.cs" />
-     <None Include="Assets\Materials\Refraction.shader" />
-     <None Include="Assets\StreamingAssets\FMOD_bank_list.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\C++ CLASSES\CharacterSound.cs" />
+     <Compile Include="Assets\C++ CLASSES\DrawCollider.cs" />
+     <Compile Include="Assets\C++ CLASSES\Move\MouseLook.cs" />
+     <Compile Include="Assets\C++ CLASSES\Move\Move.cs" />
+     <Compile Include="Assets\C++ CLASSES\MusicScript.cs" />
+     <Compile Include="Assets\C++ CLASSES\ObstaclesBehaviour.cs" />
+     <Compile Include="Assets\C++ CLASSES\Reset.cs" />
+     <Compile Include="Assets\C++ CLASSES\TerrainModif.cs" />
+     <Compile Include="Assets\C++ CLASSES\TriggerAcceleration.cs" />
+     <Compile Include="Assets\PACKAGES\TPS Camera\C++\CameraController.cs" />
+     <Compile Include="Assets\SOUND\Plugins\FMOD\FMODAsset.cs" />
+     <Compile Include="Assets\SOUND\Plugins\FMOD\FMOD_Listener.cs" />
+     <Compile Include="Assets\SOUND\Plugins\FMOD\FMOD_StudioEventEmitter.cs" />
+     <Compile Include="Assets\SOUND\Plugins\FMOD\FMOD_StudioSystem.cs" />
+     <Compile Include="Assets\SOUND\Plugins\FMOD\Wrapper\fmod.cs" />
+     <Compile Include="Assets\SOUND\Plugins\FMOD\Wrapper\fmod_dsp.cs" />
+     <Compile Include="Assets\SOUND\Plugins\FMOD\Wrapper\fmod_errors.cs" />
+     <Compile Include="Assets\SOUND\Plugins\FMOD\Wrapper\fmod_studio.cs" />
+     <None Include="Assets\GRAPH\ENV\Materials\Refraction.shader" />
+     <None Include="Assets\SOUND\StreamingAssets\FMOD_bank_list.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
@@ -75,10 +77,6 @@
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{984BE45E-392C-EB3D-F23A-74E936C7C757}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
