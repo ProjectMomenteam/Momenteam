@@ -6,23 +6,23 @@ using System.Linq;
 
 public class Move : MonoBehaviour {
 
-    Rigidbody _Rigidbody;
-    Collider _Collider;
+    private Rigidbody _Rigidbody;
+    private Collider _Collider;
 
     public float _Speed = 5;
-    public float _SpeedIncrease = 0;
+    [HideInInspector] public float _SpeedIncrease = 0;
 
     public List<int> _Palliers = new List<int>();
-    public int _CurrentPalier = 0;
-    public int _MaxPallier = 0;
+    private int _CurrentPalier = 0;
+    private int _MaxPallier = 0;
 
     public float _SpeedDegradation = 1;
     public float _SpeedDegradationTimer = 2;
 
-    public float _DegradationTimer = 0;
+    [HideInInspector] public float _DegradationTimer = 0;
 
-    public float _PrevHeight = 0;
-    public float _AscendValue = 0;
+    private float _PrevHeight = 0;
+    [HideInInspector] public float _AscendValue = 0;
 
     public float _ArtificialGravity = 10;
 
